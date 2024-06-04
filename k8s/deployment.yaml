@@ -15,7 +15,7 @@ spec:
         run: my-app-vue
     spec:
       containers:
-      - image: gcr.io/[PROJECT-ID]/my-app-vue:latest #Replace [PROJECT-ID] accordingly
+      - image: gcr.io/gcp-cicd-test-425406/my-app-vue:latest #Replace [PROJECT-ID] accordingly
         name: my-app-vue
         ports:
         - containerPort: 8080
