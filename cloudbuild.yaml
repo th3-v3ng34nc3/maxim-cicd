@@ -38,4 +38,4 @@ steps:
 images: [
    'gcr.io/gcp-cicd-test-425406/my-app-vue:latest'
   ]
-logsBucket: REGIONAL_USER_OWNED_BUCKET
+logsBucket: 'gs://pipeline-github'
