@@ -6,7 +6,7 @@ steps:
    '-c', 
    'docker pull gcr.io/gcp-cicd-test-425406/my-app-vue:latest || exit 0'
   ]
-  logsBucket: REGIONAL_USER_OWNED_BUCKET
+  
 # Step 2
 - name: gcr.io/cloud-builders/docker
   args: [
@@ -15,6 +15,7 @@ steps:
    'gcr.io/gcp-cicd-test-425406/my-app-vue:latest',
    '.'
   ]
+  logsBucket: REGIONAL_USER_OWNED_BUCKET
   dir: 'my-app-vue'
 # Step 3
 - name: 'gcr.io/cloud-builders/kubectl'
