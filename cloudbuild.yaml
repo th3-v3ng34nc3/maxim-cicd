@@ -16,8 +16,8 @@ steps:
   ]
   dir: 'my-app-vue'
   logsBucket: 'gs://pipeline-github'
-  options:
-    logging: GCS_ONLY
+options:
+  logging: GCS_ONLY
 # Step 3
 - name: 'gcr.io/cloud-builders/kubectl'
   args: ['apply', '-f', 'k8s/']
