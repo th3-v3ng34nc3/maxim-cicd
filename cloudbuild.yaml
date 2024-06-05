@@ -15,7 +15,6 @@ steps:
    'gcr.io/gcp-cicd-test-425406/my-app-vue:latest',
    '.'
   ]
-  logsBucket: REGIONAL_USER_OWNED_BUCKET
   dir: 'my-app-vue'
 # Step 3
 - name: 'gcr.io/cloud-builders/kubectl'
@@ -39,3 +38,4 @@ steps:
 images: [
    'gcr.io/gcp-cicd-test-425406/my-app-vue:latest'
   ]
+logsBucket: REGIONAL_USER_OWNED_BUCKET
