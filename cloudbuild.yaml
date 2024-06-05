@@ -15,9 +15,6 @@ steps:
    '.'
   ]
   dir: 'my-app-vue'
-  logsBucket: 'gs://pipeline-github'
-  options:
-    logging: LEGACY
 # Step 3
 - name: 'gcr.io/cloud-builders/kubectl'
   args: ['apply', '-f', 'k8s/']
